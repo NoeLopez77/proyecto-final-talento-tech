@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/título.ico">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Fairy Nails by Valu</title>
+</head>
+
+<body>
+
+
+    <header>
+<a href="#">
+    <img src="img/logo1.png" alt="Fairy Nails" class="logo">
+</a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="carrito">
+                    🛒 <span id="cantidad-carrito">0</span>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <section class="banner">
+
+        <h1>Bienvenidos a Fairy Nails by Valu</h1>
+
+        <p>
+            Todo para uñas esculpidas, esmaltes semipermanentes y accesorios.
+        </p>
+
+    </section>
+
+
+    <section id="productos">
+
+        <h2 class="productos-titulo">
+    🧚‍♀️ Nuestros productos 🧚‍♀️
+</h2>
+
+        <div id="lista-productos" class="productos">
+
+        </div>
+
+    </section>
+
+
+    <section id="carrito">
+
+        <h2>Mi Carrito</h2>
+
+        <div id="items-carrito"></div>
+
+        <h3>
+            Total: $ <span id="total">0</span>
+        </h3>
+
+        <button id="vaciar">
+            Vaciar carrito
+        </button>
+
+        <button id="comprar">
+            Finalizar compra
+        </button>
+
+    </section>
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <form action="https://formspree.io/f/mkodbgjg" method="POST">
+
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required>
+
+            <textarea
+                name="mensaje"
+                placeholder="Escribí tu consulta"
+                required></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Fairy Nails by Valu - Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>

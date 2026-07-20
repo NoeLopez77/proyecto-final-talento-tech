@@ -1,0 +1,503 @@
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff5f8;
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background:#ff69b4;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    width:130px;
+}
+
+/* ===== MENÚ ===== */
+
+.navbar{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#ffe600;
+}
+
+.carrito{
+    font-weight:bold;
+}
+
+/* ===== BANNER ===== */
+
+.banner{
+    background:linear-gradient(#ffc0cb,#ffb6d5);
+
+    padding:70px 20px;
+
+    text-align:center;
+}
+
+.banner h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+/* ===== PRODUCTOS ===== */
+
+#productos{
+    padding:50px;
+}
+
+#productos h2{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+/* ===== TARJETA ===== */
+
+.producto{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.producto img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.producto h3{
+
+    margin-top:15px;
+
+}
+
+.producto p{
+
+    margin:10px;
+
+    font-size:20px;
+
+    color:#ff1493;
+
+}
+
+.producto button{
+
+    background:#ff69b4;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    margin:15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    width:85%;
+
+}
+
+.producto button:hover{
+
+    background:#e60073;
+
+}
+
+/* ===== CARRITO ===== */
+
+#carrito{
+
+    background:white;
+
+    margin:40px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.item-carrito{
+
+    margin:20px 0;
+
+}
+
+.item-carrito button{
+
+    margin:5px;
+
+    padding:8px 12px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+    background:#ff69b4;
+
+    color:white;
+
+}
+
+#vaciar,
+#comprar{
+
+    padding:12px 20px;
+
+    margin:15px 10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+#vaciar{
+
+    background:#ff4444;
+
+}
+
+#comprar{
+
+    background:#00b894;
+
+}
+
+/* ===== CONTACTO ===== */
+
+#contacto{
+
+    padding:50px;
+
+    background:#ffe6f0;
+
+}
+
+#contacto h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+
+textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+form button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#ff69b4;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+form button:hover{
+
+    background:#e60073;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+    background:#ff69b4;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ===== RESPONSIVE ===== */
+/* ========================= */
+/* TABLETS */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    margin-top:20px;
+
+}
+
+.banner h1{
+
+    font-size:30px;
+
+}
+
+#productos{
+
+    padding:20px;
+
+}
+
+#carrito{
+
+    margin:20px;
+
+}
+
+}
+@media screen and (max-width: 992px){
+
+    header{
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .navbar{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .productos{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #carrito{
+        margin:20px;
+    }
+
+}
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo{
+        width:110px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+        width:100%;
+    }
+
+    .navbar li{
+        width:100%;
+    }
+
+    .navbar a{
+        display:block;
+        padding:10px;
+    }
+
+    .banner{
+        padding:40px 15px;
+    }
+
+    .banner h1{
+        font-size:28px;
+    }
+
+    .banner p{
+        font-size:16px;
+    }
+
+    #productos{
+        padding:20px;
+    }
+
+    .productos{
+        grid-template-columns:1fr;
+    }
+
+    .producto img{
+        height:200px;
+    }
+
+    #carrito{
+        margin:15px;
+        padding:15px;
+    }
+
+    #vaciar,
+    #comprar{
+        width:100%;
+        margin:10px 0;
+    }
+
+    form{
+        width:100%;
+    }
+
+    input,
+    textarea,
+    form button{
+        width:100%;
+    }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUEÑOS */
+/* ========================= */
+
+@media screen and (max-width:480px){
+
+    .banner h1{
+        font-size:22px;
+    }
+
+    .banner p{
+        font-size:14px;
+    }
+
+    .producto{
+        margin:0 auto;
+    }
+
+    .producto h3{
+        font-size:18px;
+    }
+
+    .producto p{
+        font-size:18px;
+    }
+
+    footer{
+        font-size:14px;
+        padding:15px;
+    }
+
+}
